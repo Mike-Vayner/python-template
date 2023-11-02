@@ -54,7 +54,6 @@
     "flake8.args": [
         "--config=.flake8"
     ],
-    "ruff.importStrategy": "fromEnvironment",
     "ruff.fixAll": true,
     "ruff.organizeImports": true,
     "evenBetterToml.formatter.alignComments": false,
