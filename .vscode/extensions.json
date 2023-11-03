@@ -3,8 +3,6 @@
         "charliermarsh.ruff",
         "ms-python.black-formatter",
         "ms-python.flake8",
-        "ms-python.mypy-type-checker",
-        "ms-python.python",
-        "tamasfe.even-better-toml"
+        "ms-python.python"
     ]
 }

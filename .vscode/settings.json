@@ -1,77 +1,25 @@
 {
     "files.associations": {
-        "pyrightconfig*.json": "jsonc",
         ".flake8": "properties"
     },
-    "files.exclude": {
-        "**/.*_cache": true, // mypy and Ruff cache
-        "**/__pycache__": true
-    },
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
-    "editor.detectIndentation": false,
-    "editor.tabSize": 2,
-    "[json][jsonc][python][toml]": {
-        "editor.tabSize": 4,
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-            "source.fixAll": true,
-            "source.organizeImports": true
-        }
-    },
-    "editor.rulers": [
-        90,
-        130
-    ],
-    "[git-commit]": {
-        "editor.rulers": [
-            72
-        ]
-    },
-    "[json][jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "[toml]": {
-        "editor.rulers": [
-            90
-        ],
-        "editor.defaultFormatter": "tamasfe.even-better-toml"
-    },
-    "[python]": {
-        "editor.rulers": [
-            130
-        ],
-        "editor.defaultFormatter": "ms-python.black-formatter"
-    },
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic",
     "python.analysis.fixAll": [
         "source.unusedImports"
     ],
-    "python.analysis.useLibraryCodeForTypes": false,
-    "mypy-type-checker.args": [
-        "--strict"
-    ],
-    "flake8.args": [
-        "--config=.flake8"
-    ],
-    "ruff.fixAll": true,
-    "ruff.organizeImports": true,
-    "evenBetterToml.formatter.alignComments": false,
-    "evenBetterToml.formatter.alignEntries": false,
-    "evenBetterToml.formatter.allowedBlankLines": 1,
-    "evenBetterToml.formatter.arrayAutoCollapse": true,
-    "evenBetterToml.formatter.arrayAutoExpand": true,
-    "evenBetterToml.formatter.arrayTrailingComma": true,
-    "evenBetterToml.formatter.columnWidth": 90,
-    "evenBetterToml.formatter.compactArrays": true,
-    "evenBetterToml.formatter.compactEntries": false,
-    "evenBetterToml.formatter.compactInlineTables": false,
-    "evenBetterToml.formatter.indentEntries": false,
-    "evenBetterToml.formatter.indentTables": false,
-    "evenBetterToml.formatter.inlineTableExpand": false,
-    "evenBetterToml.formatter.reorderArrays": true,
-    "evenBetterToml.formatter.trailingNewline": true,
-    "evenBetterToml.formatter.reorderKeys": false,
-    "python.analysis.typeCheckingMode": "basic",
-    "python.analysis.autoImportCompletions": true
+    "python.createEnvironment.contentButton": "show",
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports.ruff": "explicit"
+        },
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.rulers": [80],
+        "editor.foldingImportsByDefault": true,
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.wordBasedSuggestions": false,
+        "editor.inlineSuggest.suppressSuggestions": false
+    }
 }
