@@ -1,8 +1,8 @@
 {
     "recommendations": [
         "charliermarsh.ruff",
-        "ms-python.black-formatter",
-        "ms-python.flake8",
-        "ms-python.python"
+        "ms-python.python",
+        "visualstudioexptteam.vscodeintellicode",
+        "visualstudioexptteam.vscodeintellicode-completions"
     ]
 }

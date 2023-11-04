@@ -1,6 +1,6 @@
 {
-    "files.associations": {
-        ".flake8": "properties"
+    "evenBetterToml.schema.associations": {
+        "***/pyproject.toml": "https://json.schemastore.org/pyproject.json"
     },
     "python.analysis.autoImportCompletions": true,
     "python.analysis.typeCheckingMode": "basic",
@@ -12,14 +12,18 @@
         "diffEditor.ignoreTrimWhitespace": false,
         "editor.codeActionsOnSave": {
             "source.fixAll": "explicit",
-            "source.organizeImports.ruff": "explicit"
+            "source.organizeImports": "explicit"
         },
-        "editor.defaultFormatter": "ms-python.black-formatter",
-        "editor.rulers": [80],
-        "editor.foldingImportsByDefault": true,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.detectIndentation": false,
         "editor.formatOnSave": true,
         "editor.formatOnType": true,
+        "editor.rulers": [80],
+        "editor.tabSize": 4,
         "editor.wordBasedSuggestions": false,
         "editor.inlineSuggest.suppressSuggestions": false
+    },
+    "[toml]": {
+        "editor.tabSize": 2
     }
 }
