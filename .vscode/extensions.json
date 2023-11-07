@@ -2,7 +2,6 @@
     "recommendations": [
         "charliermarsh.ruff",
         "ms-python.python",
-        "visualstudioexptteam.vscodeintellicode",
-        "visualstudioexptteam.vscodeintellicode-completions"
+        "tamasfe.even-better-toml"
     ]
 }
