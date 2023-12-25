@@ -1,6 +1,6 @@
 {
     "evenBetterToml.schema.associations": {
-        "***/pyproject.toml": "https://json.schemastore.org/pyproject.json"
+        "^.*pyproject\\.toml$": "https://json.schemastore.org/pyproject.json"
     },
     "python.analysis.autoImportCompletions": true,
     "python.analysis.typeCheckingMode": "basic",
@@ -18,9 +18,9 @@
         "editor.detectIndentation": false,
         "editor.formatOnSave": true,
         "editor.formatOnType": true,
-        "editor.rulers": [80],
+        "editor.rulers": [79, 88],
         "editor.tabSize": 4,
-        "editor.wordBasedSuggestions": false,
+        "editor.wordBasedSuggestions": "off",
         "editor.inlineSuggest.suppressSuggestions": false
     },
     "[toml]": {
